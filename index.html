@@ -1,154 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Company</title>
   <style>
-  body {
-    position: relative; 
-    background-color:#00bcd4;
-  }
-  body {
-    
-}
-h1{
-    text-align:center ;
-  color:white;
-}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
 h2{
     text-align:center ;
-  color:white;
 }
-.founder {
-            text-align: center;
-            margin: 20px;
-            padding: 15px;
-            border-radius: 10px;
-            color:black;
-            
-        }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
 
-        .founder img {
+    #services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .service-card {
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .service-card-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    #slideshow {
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    #slideshow img {
+      width: 100%;
+      height: auto;
+    }
+
+    #team {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .employee-card {
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .employee-card img {
             width: 150px;
             border-radius: 50%;
             margin-bottom: 10px;
         }
 
-        #founder1 {
-            background-color: #eeefff; /* Gold */ 
-            color:black;
-        }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
 
-        #founder2 {
-            background-color: #98fb98; /* Mint Green */
-        }
-
-        #founder3 {
-            background-color: #87cefa; /* Light Sky Blue */
-        }
-
-        #founder4 {
-            background-color: #ffcccb; /* Light Coral */
-        }
-  #section1 {padding-top:50px;height:40vh;color: #000;  background-image: url("tech.jpeg") ; background-position: center ; backgroun-size:cover; }
-  #section2 {padding-top:50px;height:auto;color: #fff; background-color: #00bcd4 ;}
-  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #009688 ;}
-  #section41 {padding-top:50px;height:600px;color: #fff; background-color: #00bcd4;  bottom:0;}
-  
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
   </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+  <header>
+    <h1>Nuel Industries</h1>
+    <p>Upgrade Your Tech with Us</p>
+  </header>
 
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Nuel Industries🚀</a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#section1">Section 1</a></li>
-          <li><a href="#section2">Section 2</a></li>
-          <li><a href="#section3">Section 3</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#section41">Section 4-1</a></li>
-              <li><a href="#section42">Section 4-2</a></li>
-            </ul>
-          </li>
-        </ul>
+  <section id="services">
+    <div class="service-card">
+      <img src="upgrade.jpg" alt="App Upgrade">
+      <div class="service-card-content">
+        <h2>App Upgrades</h2>
+        <p>We specialize in upgrading and enhancing your applications for optimal performance.</p>
       </div>
     </div>
-    
-  </div>
-</nav>    
 
-<div id="section1" class="container-fluid">
+    <div class="service-card">
+      <img src="gadget.jpeg" alt="Gadget Innovation">
+      <div class="service-card-content">
+        <h2>Gadget Innovation</h2>
+        <p>Explore the latest in gadget technology with our innovative solutions and products.</p>
+      </div>
+    </div>
 
-</div>
+    <div class="service-card">
+      <img src="security.jpeg" alt="Tech Security">
+      <div class="service-card-content">
+        <h2>Tech Security</h2>
+        <p>Ensure the safety of your technology assets with our advanced security measures.</p>
+      </div>
+    </div>
+  </section>
 
-</div>
-<div id="section2" class="container-fluid">
-  <h1>Nuel Industries</h1>
-  <div class="founder" id="founder1">
-    <img src="founder.jpg" alt="Founder 1">
+  <section id="slideshow">
+    <!-- Add your slideshow images here -->
+    <img src="security.jpeg" alt="Slide 1">
+    <img src="gadget.jpeg" alt="Slide 2">
+    <img src="upgrade.jpg" alt="Slide 3">
+  </section>
+
+ <section id="team">
+    <div class="employee-card">
+    <img src="founder.jpg">
     <h2>Emmanuel Agafie</h2>
-    <p>Founder and CEO</p>
-</div>
+      <h3>Founder & CEO </h3>
+      <p>Media:<i class="fa fa-facebook"></i>...</p>
+    </div>
 
-<div class="founder" id="founder2">
-    <img src="founder2.jpg" alt="Founder 2">
-    <h2>Momoh Victor</h2>
-    <p>Co-founder and CTO</p>
-</div>
+    <div class="employee-card">
+    <img  src="founder2.jpg>">
+      <h2>Momoh Victor</h2>
+      <h3>Co-founder...</h3>
+    </div>
 
+    
+  </section>
 
-
-<div class="founder" id="founder3">
-    <img src="founder3.jpg" alt="Founder 3">
-    <h2>Bob Johnson</h2>
-    <p>Co-founder and CFO</p>
-</div>
-
-<div class="founder" id="founder4">
-    <img src="founder4.jpg" alt="Founder 4">
-    <h2>Alice Brown</h2>
-    <p>Co-founder and COO</p>
-</div>
-
-</div>
-
-<div id="section3" class="container-fluid">
-  <h1>About Us</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section41" class="container-fluid">
-  <h1>Section 4 Submenu 1</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  
-  
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-
+  <footer>
+    <a href="#" target="_blank">Facebook</a>
+    <a href="#" target="_blank">Twitter</a>
+    <a href="#" target="_blank">LinkedIn</a>
+    <a href="mailto:info@example.com">Gmail</a>
+  </footer>
 
 </body>
-</html>>
-
 </html>
-
-  
-    
-    
-    
-    
