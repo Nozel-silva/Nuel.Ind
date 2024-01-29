@@ -20,6 +20,45 @@ h2{
       text-align: center;
       padding: 20px;
     }
+    
+    
+    .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            
+            margin: 20px;
+            background-color: #fff;
+    
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the entire container */
+            border-bottom: 1px solid #ddd;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title { 
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-description {
+            font-size: 16px;
+            color: #666;
+            line-height:2;
+            
+        }
+
+    
+    
+    
 
     #services {
       display: flex;
@@ -109,32 +148,53 @@ h2{
     <p>Upgrade Your Tech with Us</p>
   </header>
 
-  <section id="services">
-  <img src="upgrade.jpg" alt="App Upgrade">
-    <div class="service-card">
-      
-      <div class="service-card-content">
-        <h2>App Upgrades</h2>
+  
+ 
+    
+    <div class="card">
+<img src="upgrade.jpg" alt="Card Image">
+<div class="card-content">
+    <h2>App Upgrades</h2>
         <p>We specialize in upgrading and enhancing your applications for optimal performance.</p>
-      </div>
-    </div>
-<img src="gadget.jpeg" alt="Gadget Innovation">
-    <div class="service-card">
-      
-      <div class="service-card-content">
-        <h2>Gadget Innovation</h2>
-        <p>Explore the latest in gadget technology with our innovative solutions and products.</p>
-      </div>
     </div>
 
-    <div class="service-card">
-      <img src="security.jpeg" alt="Tech Security">
-      <div class="service-card-content">
-        <h2>Tech Security</h2>
-        <p>Ensure the safety of your technology assets with our advanced security measures.</p>
-      </div>
+    
+</div>
+
+    
+    
+
+
+<div class="card">
+<img src="gadget.jpeg" alt="Card Image">
+<div class="card-content">
+    <h2>Gadget Innovation</h2>
+        <p>Explore the latest in gadget technology with our innovative solutions and products.</p>
     </div>
-  </section>
+
+    
+</div>
+
+
+
+
+
+
+    
+    
+    <div class="card">
+<img src="security.jpeg" alt="Card Image">
+<div class="card-content">
+      <h2>Tech Security</h2>
+        <p>Ensure the safety of your technology assets with our advanced security measures.</p>
+    </div>
+
+    
+</div>
+
+    
+    
+ 
 
   <section id="slideshow">
     <!-- Add your slideshow images here -->
