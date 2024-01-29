@@ -37,10 +37,9 @@ h2{
       border-radius: 8px;
       position: relative;
       overflow: hidden;
-      color:white;
     }
 
-    .service-card img {
+    #services img {
       width: 100%;
       height: auto;
       object-fit: cover;
@@ -111,16 +110,17 @@ h2{
   </header>
 
   <section id="services">
+  <img src="upgrade.jpg" alt="App Upgrade">
     <div class="service-card">
-      <img src="upgrade.jpg" alt="App Upgrade">
+      
       <div class="service-card-content">
         <h2>App Upgrades</h2>
         <p>We specialize in upgrading and enhancing your applications for optimal performance.</p>
       </div>
     </div>
-
+<img src="gadget.jpeg" alt="Gadget Innovation">
     <div class="service-card">
-      <img src="gadget.jpeg" alt="Gadget Innovation">
+      
       <div class="service-card-content">
         <h2>Gadget Innovation</h2>
         <p>Explore the latest in gadget technology with our innovative solutions and products.</p>
@@ -152,7 +152,7 @@ h2{
     </div>
 
     <div class="employee-card">
-    <img  src="founder2.jpg>">
+    <img  src="founder2.jpg">
       <h2>Momoh Victor</h2>
       <h3>Co-founder...</h3>
     </div>
@@ -168,4 +168,27 @@ h2{
   </footer>
 
 </body>
+<script>
+    
+    // JavaScript for the slideshow
+    const slideshowContainer = document.getElementById('slideshow');
+    const images = document.querySelectorAll('#slideshow img');
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      currentIndex = (index + images.length) % images.length;
+
+      for (let i = 0; i < images.length; i++) {
+        images[i].style.display = i === currentIndex ? 'block' : 'none';
+      }
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+  
+</script>
 </html>
