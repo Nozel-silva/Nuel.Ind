@@ -16,13 +16,41 @@ h2{
     text-align:center ;
     
 }
-    header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
     
+    header {
+    position: relative;
+    height: 20vh; /* Adjust the height as needed */
+}
+
+#header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Make text bolder */
+    z-index: 1; /* Ensure text is above the video */
+}
+
+#header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* Reduce opacity of the video */
+}
+
+
     
     .card {
             border-radius: 8px;
@@ -178,9 +206,16 @@ text-align:center;
 <body>
 
   <header>
-    <h1><b class="sc">L.E.V.I</b></h1>
-    <p></p>
-  </header>
+    <video autoplay muted loop id="header-video">
+        <source src="your-video-file.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="header-content">
+        <h1><b class="sc">L.E.V.I</b></h1>
+        <p></p>
+    </div>
+</header>
+
 
   
  
