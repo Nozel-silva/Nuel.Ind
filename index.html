@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Tech Company</title>
+  <title>L.E.V.I Company</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,11 +16,39 @@ h2{
     text-align:center ;
     
 }
+
+
     
     header {
-    position: relative;
-    height: 100vh; /* Adjust the height as needed */
-}
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #333; /* Dark container background */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-list {
+      margin-bottom: 20px;
+    }
+
+    .project-list h2 {
+      color: #fff; /* Header text color */
+    }
+
+    .countdown {
+      color: gold; /* Golden color */
+      font-size: 18px;
+      text-align: ;
+      margin-top: 20px;
+    }
 
 #header-video {
     position: absolute;
@@ -192,6 +220,24 @@ text-align:center;
       color: white;
       text-decoration: none;
     }
+    
+    .container h2{
+    color:salmon;
+}
+
+.container h1{
+    color:Green;
+    text-align:center ;
+}
+.container p{
+    color:white;
+}
+.container li{
+    color:ghostwhite;
+    font-weight:bolder ;
+}
+    
+    
     h3{
         
     }
@@ -204,6 +250,12 @@ text-align:center;
   </style>
 </head>
 <body>
+<header>
+    <h1>L.E.V.I</h1>
+  </header>
+
+
+
 <!--
   <header>
     <video autoplay muted loop id="header-video">
@@ -304,27 +356,22 @@ text-align:center;
     
   </section>
   
-<section class="achv">
-    <h2>Main Projects</h2>
-    <div class="pro"> 
-        <h3><a href="#">SafeGoals</a></h3>
-        <p>Betting Forte</p>
-     </div>
-     <div class="pro"> 
-        <h3> <a href="#">SafeSend</a></h3><i>Coming soon</i>
-        <p>Txns</p>
+<div class="container">
+<h1>Projects</h1>
+<ul> 
+    <div class="project-list">
+      <li>Safegoals</li>
+      <p>The best goal selector</p>
+      <div class="countdown" id="countdown"></div>
     </div>
-    <div class="pro"> 
-        <h3><a href="#">SafeSwap</a></h3><i>Coming soon</i>
-        <p>$ <i class="fa fa-repeat"></i> £</p>
-        </div>
-        <div class="pro">
-            
-      <h3><a href="#">SafeChain</a></h3> <i>Coming soon</i>
-      <p>BlockChain Txns</p>
+    <div class="project-list">
+      <li>SafeSend</li>
+      <p>solves the problem of network congestion</p>
+      <div class="countdown" id="countdown"></div>
     </div>
-    
-</section>
+    <!-- Add more projects here -->
+  </div>
+  </ul>
   <footer>
     <a href="#" target="_blank"><i class="fa fa-desktop"></i></a>
     <a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a>
@@ -355,5 +402,39 @@ text-align:center;
 
     setInterval(nextSlide, 3000); // Change slide every 3 seconds
   
+  
+  
+  
+  
+  //countdown
+  const countDownDate = new Date("Apr 30, 2024 00:00:00").getTime();
+
+    // Update the countdown every 1 second
+    const timer = setInterval(function() {
+
+      // Get the current date and time
+      const now = new Date().getTime();
+
+      // Calculate the time remaining
+      const distance = countDownDate - now;
+
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown in the element with id="countdown"
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the countdown is finished, display a message
+      if (distance < 0) {
+        clearInterval(timer);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  
+ 
 </script>
 </html>
