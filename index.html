@@ -753,6 +753,175 @@ text-align:center;
         </div>
     </div>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.E.V.I - Software Security & More</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #FDF3E3; /* Soft cream background */
+            color: #333333; /* Dark charcoal text */
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #005B96; /* Deep blue for main headings */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .services, .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service, .team-member {
+            background-color: #E8E8E8; /* Light grey for the cards */
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(255, 111, 97, 0.3); /* Coral shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service img, .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .service:hover, .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(255, 111, 97, 0.6); /* Coral hover shadow */
+        }
+
+        h3 {
+            color: #FF6F61; /* Coral for subheadings */
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333333; /* Dark charcoal for general text */
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .certification {
+            margin-top: 50px;
+            font-size: 18px;
+            background-color: #FFD3C2; /* Light coral background */
+            color: #333333; /* Dark text */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(255, 111, 97, 0.4); /* Coral shadow */
+        }
+
+        .projects {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .projects a {
+            display: block;
+            font-size: 18px;
+            color: #005B96; /* Deep blue for links */
+            margin-bottom: 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .projects a:hover {
+            color: #FF6F61; /* Coral hover for links */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to L.E.V.I</h1>
+        <h2>Your Trusted Partner in Tech Solutions</h2>
+
+        <!-- Services Section -->
+        <div class="services">
+            <div class="service fade-in" id="service1">
+                <img src="secure.webp" alt="Software Security">
+                <h3>Software Security</h3>
+                <p>We ensure that your applications and data are secured with cutting-edge encryption and firewalls to protect from cyber threats.</p>
+            </div>
+            <div class="service fade-in" id="service2">
+                <img src="app.webp" alt="Application Upgrades">
+                <h3>Application Upgrades</h3>
+                <p>Our team provides timely and efficient software updates to keep your systems running smoothly and securely.</p>
+            </div>
+            <div class="service fade-in" id="service3">
+                <img src=" Geo.jpg" alt="Data Processing">
+                <h3>Data Processing</h3>
+                <p>We handle large-scale data processing projects, ensuring accurate and efficient analysis and management of your information.</p>
+            </div>
+            <div class="service fade-in" id="service4">
+                <img src="web.webp" alt="Website Designing">
+                <h3>Website Designing</h3>
+                <p>Our creative team builds sleek, professional websites designed to captivate your audience and enhance your digital presence.</p>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="team-member fade-in" id="founder">
+                <img src="founder.jpg" alt="Founder">
+                <h3>Emmanuel Agafie</h3>
+                <p>Founder of L.E.V.I, Nuel has over 4 years of experience in the tech industry, specializing in software security and development.</p>
+            </div>
+            <div class="team-member fade-in" id="cofounder">
+                <img src="founder3.jpg" alt="Co-Founder">
+                <h3>Momoh victor</h3>
+                <p>Co-founder of L.E.V.I, Jane is a certified expert in data processing and application management, ensuring top-tier service delivery.</p>
+            </div>
+        </div>
+
+        <!-- Certification -->
+        <div class="certification fade-in" id="certified">
+            <p>L.E.V.I is a legally certified company, registered and recognized for its exceptional work in the tech sector.</p>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects fade-in">
+            <h2>Our Projects</h2>
+            <a href="http://SafeGoals.xyz" target="_blank">SafeGoals</a>
+            <a href="#safesend">SafeSend (not available for the general public)</a>
+            <a href="#safenet">SafeNet (not available for the general public)</a>
+        </div>
+    </div>
+
     <script>
         // Function to reveal elements on scroll with a fade-in animation
         function revealOnScroll() {
